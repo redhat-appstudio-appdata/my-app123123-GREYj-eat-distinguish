@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-5xew
+  namespace: rh-ee-ssiravo-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:168a543cebdfd68be072a4a642b7ebfe898cc5f962e631ec0a3b5f03c96e3ceb
+        name: my-python
+        resources: {}
+status: {}
